@@ -1,0 +1,57 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <div class="konten">
+
+
+
+          <div class="box" style="position: absolute; ">
+            <div class="container">
+              <ion-toolbar>
+                <ion-menu-button style="color: white;float: right;">
+                  <ion-icon name="close-circle" class="text-light" style="font-size: 40px;" menuClose></ion-icon>
+                </ion-menu-button>
+
+              </ion-toolbar>
+            </div>
+            <div class="container">
+
+              <div class="text-center mt-1">
+                <div class="container">
+
+                  <ion-avatar class="avatar">
+
+                    <img src="../assets/icon/ppp.JPG" style="border:3px solid #7193e0;">
+
+                  </ion-avatar>
+
+                  <h4 style="font-family: 'Quicksand', sans-serif;color: #eaeaea;"> <b> Muhammad Fadlullah </b></h4>
+                  <small style="background-color: #eaeaea;"></small>
+                  <div class="col mt-3">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-4 ">
+
+
+              <ion-list *ngFor="let d of appPages" class="item item-trns" lines="none">
+                <ion-item [routerDirection]="'root'" [routerLink]="[d.url]"
+                  style="--background: transparent !important;--padding: 0px !important;margin-top: -15px;">
+                  <ion-icon slot="start" [name]="d.icon" style="font-size: 25px;color:#fff ;">
+                  </ion-icon>
+                  <h4 style="font-family:'Nunito', sans-serif;font-size: 15px;color: #fff;">{{d.title}}</h4>
+                </ion-item>
+              </ion-list>
+            </div>
+
+
+          </div>
+        </div>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

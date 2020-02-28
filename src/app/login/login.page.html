@@ -1,0 +1,52 @@
+<ion-content>
+
+  <body>
+
+    <div class="container" style="margin-top: 50px;">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+
+            <div class="text-center">
+              <h1 class="text-light" style="font-family:'Montserrat',sans-serif;font-size: 35px;margin-top: -20px;">
+                Login</h1>
+
+              <img src="../../assets/icon/lock.png" class="mt-2" style="width: 150px;height: auto;" alt="" />
+            </div>
+            <div class="container mt-5">
+
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend" style="margin-top: -1px;">
+                  <div class="input-group-text"
+                    style="background-color: transparent;border: none;border-radius:0px;border-bottom: 2px solid #fff;font-size: 20px;color: #fff;font-size: 30px;">
+                    <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+                  </div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername2" [(ngModel)]="username"
+                  placeholder="Username">
+              </div>
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend" style="margin-top: -1px;">
+                  <div class="input-group-text"
+                    style="background-color: transparent;border: none;border-radius:0px;border-bottom: 2px solid #fff;font-size: 20px;color: #fff;font-size: 30px;">
+                    <ion-icon ios="ios-key" md="md-key"></ion-icon>
+                  </div>
+                </div>
+                <input type="password" class="form-control" id="inlineFormInputGroupUsername2" [(ngModel)]="password"
+                  placeholder="Password">
+              </div>
+
+              <div class="text-center mt-5">
+
+                <button type="button" class="btn btn-warning btn-block text-light" style="border-radius: 20px;"
+                  (click)="prosesLogin()">Login</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</ion-content>

@@ -1,0 +1,94 @@
+<ion-content>
+  <img src="../../assets/background/home.png" alt="" style="width: 100%;height:50%;">
+
+  <div class="box" style="margin-top: -320px; ">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button style="color: white;"></ion-menu-button>
+      </ion-buttons>
+      <h4 class="text-center text-light font-weight-light" style="font-family:'Nunito';">
+        Profile <ion-icon ios="ios-more" md="md-more" class="mr-2" style="float: right;"></ion-icon>
+      </h4>
+    </ion-toolbar>
+
+
+
+    <div class="container" style="margin-top: 50px;">
+      <div class="row ">
+        <div class="justify-content-center">
+          <div class="col-md-12">
+
+            <div class="text-center">
+              <div class="card" style="width: 100%;border-radius: 20px;padding: 10px;">
+                <div class="card-header">
+
+                  <div class="text-center">
+
+                    <img src="../../assets/icon/user.png" class="card-img-top" alt="..." style="width: 200px;">
+                  </div>
+                </div>
+                <div class="card-body" *ngFor="let p of name" style="margin-top: -20px;">
+                  <h5 class="card-title" style="font-family: 'Francois One', sans-serif;font-size: 40px;">{{p.nama}}
+                  </h5>
+                  <p class="card-text" style="font-family: 'Istok Web', sans-serif;">
+                    {{p.desc}}
+                    {{p.desc}}
+
+                    <ion-grid class="mt-4">
+                      <ion-row>
+                        <ion-col size="4">
+                          <div style="background-color:#e1ebf9;padding: 5px;border-radius: 5px;">
+                            <small>
+                              <ion-icon ios="ios-stats" md="md-stats" class="mt-2"
+                                style="font-size: 50px;color: #7193e0;">
+                              </ion-icon>
+                              <br>
+                              Company
+                            </small>
+                          </div>
+                        </ion-col>
+                        <ion-col size="4" (click)="presentToast()">
+                          <div style="background-color:#e1ebf9;padding: 5px;border-radius: 5px;">
+                            <small>
+                              <ion-icon ios="ios-pie" md="md-pie" class="mt-2" style="font-size: 50px;color: #a4a8e9;">
+                              </ion-icon>
+                              <br>
+                              Bussiness
+                            </small>
+                          </div>
+                        </ion-col>
+                        <ion-col size="4" [routerLink]="['/product']">
+                          <div style="background-color:#e1ebf9;padding: 5px;border-radius: 5px;">
+                            <small>
+                              <ion-icon ios="ios-briefcase" md="md-briefcase" class="mt-2"
+                                style="font-size: 50px;color: #c5ddeb;">
+                              </ion-icon>
+                              <br>
+                              Product
+                            </small>
+                          </div>
+                        </ion-col>
+                      </ion-row>
+                    </ion-grid>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+  </div>
+  <ion-list *ngFor="let d of data">
+    <ion-item>
+      {{d.name}}
+    </ion-item>
+  </ion-list> -->
+</ion-content>

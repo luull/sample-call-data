@@ -1,0 +1,65 @@
+<ion-content>
+  <div class="konten">
+
+
+    <div class="box mt-3" style="position: absolute;">
+
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button style="color: white;">
+            <ion-icon ios="ios-list" md="md-list" style="color: white;"></ion-icon>
+          </ion-menu-button>
+        </ion-buttons>
+        <h4 class="text-center text-light font-weight-light" style="font-family: 'Didact Gothic', sans-serif;">
+          Home <ion-icon ios="ios-more" md="md-more" class="mr-3" style="float: right;color: white;"></ion-icon>
+        </h4>
+      </ion-toolbar>
+
+
+
+
+      <div class="container" style="margin-top: 80px;">
+        <div class="row ">
+          <div class="justify-content-center">
+            <div class="col-sm-12">
+
+              <div class="text-center">
+
+                <div class="card  " style="width: 100%;border-radius: 20px;">
+                  <ion-avatar class="avatar">
+
+                    <img src="../assets/icon/ppp.JPG">
+
+                  </ion-avatar>
+                  <div class="card-body" style="margin-top: -5px;" *ngFor="let n of name">
+                    <ion-card-title style="font-family:'Montserrat',sans-serif;color: #7cc1ec;"> <b> {{n.nama}}</b>
+                    </ion-card-title>
+                    <ion-card-title style="font-family:'Montserrat',sans-serif;" class="text-muted">
+                      <small class="text-muted">{{n.email}}</small>
+                    </ion-card-title>
+
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+
+                <p style="font-family:'Nunito', sans-serif;" class="text-muted text-center mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis incidunt laborum rerum, deserunt
+                  veritatis reiciendis possimus ad eveniet aperiam nesciunt officiis, amet debitis magnam rem sint
+                  veniam
+                  a
+                  ea nemo!
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

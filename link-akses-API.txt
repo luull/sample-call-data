@@ -1,0 +1,99 @@
+//Menampilkan Rubrik
+https://api.shadnetwork.com/rubrik/
+
+//Menampilkan Seluruh berita
+https://api.shadnetwork.com/berita/
+
+//Menampilkan Kategori Berita
+https://api.shadnetwork.com/kategori-berita/{id}/
+
+//Menampilkan  Berita berdasarkan ID Berita
+https://api.shadnetwork.com/berita/{id}/
+
+//Menampilkan  Content Keseluruhan
+https://api.shadnetwork.com/content/
+
+//Menampilkan  Content berdasarkan ID
+https://api.shadnetwork.com/content/{id}/
+
+//Menampilkan daftar mitrasalur
+https://api.shadnetwork.com/mitrasalur/
+
+//Menampilkan propinsi mitrasalur
+https://api.shadnetwork.com/propinsi-mitrasalur/
+
+//Menampilkan  Mitrasalur berdasarkan kode mitrasalur
+https://api.shadnetwork.com/mitrasalur/{id}/
+
+//Menampilkan daftar Gallery Video (dari Youtube)
+https://api.shadnetwork.com/video/
+
+//Menampilkan  video berdasarkan id video
+https://api.shadnetwork.com/video/{id}/
+
+//Menampilkan  video berdasarkan id Youtube video
+https://api.shadnetwork.com/video/kode/{id}/
+
+//Menampilkan  Gallery Photo Keseluruhan
+https://api.shadnetwork.com/photo/
+
+//Menampilkan Gallery Photo  berdasarkan kategori
+https://api.shadnetwork.com/kategori-photo/{id}/
+
+//Menampilkan Gallery Photo  berdasarkan id Photo
+https://api.shadnetwork.com/photo/{id}/
+
+//Menampilkan Jadwal Kegiatan
+https://api.shadnetwork.com/jadwal/
+
+//Menampilkan Brosur
+https://api.shadnetwork.com/brosur/
+
+//Menampilkan Daftar Testimoni Produk
+https://api.shadnetwork.com/testimoni-produk/
+
+//Menampilkan Testimoni Produk berdasarkan ID
+https://api.shadnetwork.com/testimoni-produk/{id}/
+
+//Menampilkan Daftar Produk Keseluruhan
+https://api.shadnetwork.com/produk/
+
+
+//Menampilkan Produk berdasarkan ID produk
+https://api.shadnetwork.com/produk/id/{id}/
+
+//Menampilkan Produk berdasarkan kode produk
+https://api.shadnetwork.com/produk/kode/{id}/
+
+//Menampilkan Produk berdasarkan nama produk
+https://api.shadnetwork.com/produk/nama/{id}/
+
+//Menampilkan PIN yang belum dipakai berdasarkan username
+https://api.shadnetwork.com/pin-belum-dipakai/{id}/
+
+//Menampilkan PIN yang sudah dipakai berdasarkan username
+https://api.shadnetwork.com/pin-sudah-dipakai/{id}/
+
+//Menampilkan Data Pribadi Member berdasarkan username
+https://api.shadnetwork.com/member/{id}/
+
+//Menampilkan Data Pribadi Member berdasarkan id
+https://api.shadnetwork.com/member/id/{id}/
+
+//Menampilkan Data jaringan Member berdasarkan id
+https://api.shadnetwork.com/network/id/{id}/
+
+//Menampilkan Data jaringan Member berdasarkan id Member
+https://api.shadnetwork.com/network/{id}/
+
+//Proses Login yang akan mengembalikan data Key jika login sukses
+https://api.shadnetwork.com/login/{uid}/{pwd}/
+
+//Menampilkan dafta profile Member  berdasarkan username/ID Member
+https://api.shadnetwork.com/myprofile/{id}/
+
+//Menampilkan rekap bonus berdasarkan username/ID Member
+https://api.shadnetwork.com/rekap_bonus/{id}/
+
+//Menampilkan  bonus periode tertenntu berdasarkan username/ID Member
+https://api.shadnetwork.com/bonus/{id}/{pr}/
